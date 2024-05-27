@@ -3,7 +3,7 @@ import { IoMdClose } from "react-icons/io";
 import { useAppDispatch } from "../../redux/store";
 import { setSubmenu } from "../../redux/sliceMore";
 
-const MenuSubBtn = () => {
+const MenuSubBtn: React.FC = () => {
   const dispatch = useAppDispatch();
   return (
     <button

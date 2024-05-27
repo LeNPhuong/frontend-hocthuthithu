@@ -13,6 +13,7 @@ export interface datamenu {
   id: number;
   name: string;
   icons: any;
+  route: string;
 }
 
 export const examplist: { id: number; name: string; img: string }[] = [
@@ -27,32 +28,46 @@ export const listMenu: datamenu[] = [
     id: 1,
     name: "trang chủ",
     icons: <GoHomeFill />,
+    route: "home",
   },
   {
     id: 2,
     name: "tin tức",
     icons: <FaNewspaper />,
+    route: "news",
   },
   {
     id: 3,
     name: "mục lục",
     icons: <BiSolidFoodMenu />,
+    route: "category",
   },
   {
     id: 4,
     name: "công cụ",
     icons: <FaToolbox />,
+    route: "tools",
   },
 ];
 
 export const serviceMenu: datamenu[] = [
-  { id: 1, name: "trợ giúp", icons: <FaHandsHelping /> },
-  { id: 2, name: "hướng dẫn", icons: <MdIntegrationInstructions /> },
+  { id: 1, name: "trợ giúp", icons: <FaHandsHelping />, route: "help" },
+  {
+    id: 2,
+    name: "hướng dẫn",
+    icons: <MdIntegrationInstructions />,
+    route: "tutorial",
+  },
 ];
 
 export const serviceTeacher: datamenu[] = [
-  { id: 1, name: "tạo bài kiểm tra", icons: <MdCreateNewFolder /> },
-  { id: 2, name: "kiểm tra", icons: <FaClipboardCheck /> },
-  { id: 3, name: "kho dữ liệu", icons: <MdSdStorage /> },
-  { id: 4, name: "quản lý", icons: <MdLeaderboard /> },
+  {
+    id: 1,
+    name: "tạo bài kiểm tra",
+    icons: <MdCreateNewFolder />,
+    route: "create",
+  },
+  { id: 2, name: "kiểm tra", icons: <FaClipboardCheck />, route: "check" },
+  { id: 3, name: "kho dữ liệu", icons: <MdSdStorage />, route: "storage" },
+  { id: 4, name: "quản lý", icons: <MdLeaderboard />, route: "manage" },
 ];

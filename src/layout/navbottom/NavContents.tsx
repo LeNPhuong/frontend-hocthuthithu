@@ -1,7 +1,7 @@
 import React from "react";
 import { listMenu } from "../../mock/listexam";
-import NavItem from "../../components/navbottom/NavItem";
 import NavMorButton from "../../components/navbottom/NavMorButton";
+import NavItem from "../../components/navbottom/NavItem";
 
 const NavContents: React.FC = () => {
   return (

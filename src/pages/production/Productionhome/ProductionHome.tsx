@@ -1,7 +1,11 @@
 import React from "react";
-
-const ProductionHome = () => {
-  return <div>ProductionHome</div>;
+import PageBuilding from "../../pagebuilding/PageBuilding";
+const ProductionHome: React.FC = () => {
+  return (
+    <div>
+      <PageBuilding />
+    </div>
+  );
 };
 
 export default ProductionHome;

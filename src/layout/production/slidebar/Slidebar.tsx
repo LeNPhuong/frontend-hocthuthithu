@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import SlideBarContainer from "./SlideBarContainer";
-import Footer from "../production/footer/Footer";
-import SLideBarButton from "../../components/slidebar/SLideBarButton";
-import { useAppDispatch, useAppSelector } from "../../redux/store";
-import { setSmall } from "../../redux/sliceMore";
+// import SlideBarContainer from "./SlideBarContainer";
+import Footer from "../footer/Footer";
+import SLideBarButton from "../../../components/slidebar/SLideBarButton";
+import { useAppDispatch, useAppSelector } from "../../../redux/store";
+import { setSmall } from "../../../redux/sliceMore";
+import SlideBarContainer from "../../slidebar/SlideBarContainer";
 
 const Slidebar: React.FC = () => {
   const [autosmall, setAutoSmall] = useState<boolean>(true);
